@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="Header">
+            <div class="logo"><img src="img.png"></div>
+            <div class="chatName">LocalChat</div>
+    </div>
+    <div class="messageContainer">
+        
+        <div class="messages">
+
+        </div>
+        <form action="/" class="chat-form">
+            <input type="text" id="Text" name="Text" autocomplete="off">
+            <button id="btn" type="submit">Send</button>
+        </form>
+
+    </div>
+
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+
+</html>
